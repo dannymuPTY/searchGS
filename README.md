@@ -24,7 +24,7 @@ lista_pagina <- generar_urls(url_google)<br><br>
 pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
 
 <br>
-## Nota:
+## Nota: <br>
 1. Al CONECTAR frecuente que el navegador no se inicie y envie el error: <br>
 Error in wdman::selenium(port = port, verbose = verbose, version = version,  :  <br>
   Selenium server signals port = 4567 is already in use.  <br>
