@@ -12,16 +12,16 @@ source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar
 url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22biologia+celular%22+&btnG="<br>
 
 ## Instalar paquetes y cargar librerias (opcional, se puede instalar los paquetes individuales)<br>
-    PubGS_library()<br>
+    PubGS_library()
   
 ## Abrir el navegador Firefox desde Selenium <br>
-conectar(url_google)<br>
+	conectar(url_google)<br>
 
 ## Generar urls de paginación<br>
-lista_pagina <- generar_urls(url_google)<br><br>
+	lista_pagina <- generar_urls(url_google)<br><br>
 
 ## Generar listado de publicaciones<br>
-pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
+	pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
 
 ##Guardar resultado en MS Excel (opcional)<br>
 library(xlsx) <br>
