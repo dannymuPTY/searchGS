@@ -12,9 +12,9 @@ browseURL("https://www.java.com/en/download/") <br>
 browseURL("https://www.mozilla.org/en-US/firefox/new/")  <br>
 
 ## Instalar version of RSelenium <br>
-	devtools::install_github("ropensci/RSelenium") <br>
-o <br>
-	install.packages("RSelenium", dependencies = TRUE) <br>
+	devtools::install_github("ropensci/RSelenium") 
+	o 
+	install.packages("RSelenium", dependencies = TRUE) 
 
 
 # LISTA DE FUNCIONES  <br>
@@ -30,18 +30,18 @@ url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22biolog
     PubGS_library()
   
 ## Abrir el navegador Firefox desde Selenium <br>
-	conectar(url_google)<br>
+	conectar(url_google)
 
 ## Generar urls de paginación<br>
-	lista_pagina <- generar_urls(url_google)<br><br>
+	lista_pagina <- generar_urls(url_google)
 
 ## Generar listado de publicaciones<br>
-	pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
+	pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()
 
 ## Guardar resultado en MS Excel (opcional)<br>
 	library(xlsx) <br>
 	write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Date(),"%Y_%m_%d") , ".xls"),
-           sheetName="publica-UTP", append=FALSE) <br>
+           sheetName="publica-UTP", append=FALSE) 
 
 <br>
 ## Nota: <br>
