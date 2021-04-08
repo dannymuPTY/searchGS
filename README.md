@@ -1,20 +1,19 @@
 # searchGS
-Algoritmo para scrapear datos de búsqueda realizada en Googel scholar
+Algoritmo para scrapear datos de búsqueda realizada en Google scholar<br><br>
 
-#-------------------------------------
-#FUNCIONES PARA HACER SCRAPING EN GS
+#FUNCIONES PARA HACER SCRAPING EN GS <br><br>
 
-#cargar archivo con funciones desde el repositorio 
-source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar.R")
+#cargar archivo con funciones desde el repositorio <br>
+source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar.R")<br><br>
 
-#añadir enlace de la busqueda en Google Scholar
-url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="
+#añadir enlace de la busqueda en Google Scholar<br>
+url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="<br><br>
 
-#concectar y cargar librerias
-conectar(url_google)
+#conectar y cargar librerias<br>
+conectar(url_google)<br><br>
 
-#generar urls de paginación
-lista_pagina <- generar_urls(url_google)
+#generar urls de paginación<br>
+lista_pagina <- generar_urls(url_google)<br><br>
 
-#generar listado de publicaciones
-publicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()
+#generar listado de publicaciones<br>
+publicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
