@@ -5,7 +5,7 @@
 PubGS_library<-function(){
 
   # Lista de paquetes de funciones a instalar
-  packages = c("(pipeR","xml2","rvest","plyr", "wordcloud","tm","NLP","dplyr","curl", "ggplot2","stringr","tidyverse","purrr", "httr", "RSelenium")
+  packages = c("(pipeR","xml2","rvest","plyr", "dplyr","curl", "stringr","tidyverse","purrr", "httr", "RSelenium")
   
   # Instala los paquetes sin� los tienes instalados
   .inst <- packages %in% installed.packages()
