@@ -30,10 +30,10 @@ write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Da
 
 <br>
 ## Nota: <br>
-1. Al CONECTAR frecuente que el navegador no se inicie y envie el error: <br>
+1. Al CONECTAR es frecuente que el navegador no se inicie y envie el error: <br>
 Error in wdman::selenium(port = port, verbose = verbose, version = version,  :  <br>
   Selenium server signals port = 4567 is already in use.  <br>
-  Es necesario volver a cargar la fucnión para que se asigne otro numero de puerto. <br>
+  Es necesario volver a ejecutar la función  CONECTAR para que se asigne otro numero de puerto. <br>
   
  2. Al scrapear es común que el servidor en GS bloquee el scaneo enviando el error:<br>
 
@@ -43,6 +43,6 @@ Error: 	 Summary: NoSuchDriver <br>
  	 Detail: A session is either terminated or not started <br>
 	 Further Details: run errorDetails method <br>
      
- El navegador mostrará un verificador CAPTCHA para dar acceso a los contenidos.
+ El navegador mostrará un verificador CAPTCHA para verificar que no es un a*náquina y luego dará acceso a los contenidos.
   
-  3. Existe una limitante del algoritmo para escrapear solo 30 páginas, el máximo es 98.
+  3. Existe una limitante del algoritmo para escrapear, ya que solo scrapea 30 páginas, el máximo es 98.
