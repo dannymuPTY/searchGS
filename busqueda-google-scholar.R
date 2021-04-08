@@ -70,9 +70,6 @@ generar_urls <- function(url_google){
 #-----------------------------------------
 
 conectar <- function(url_google){
-  #cargar librerias
-  PubGS_library()
-  
   #codigo selenium --------------
   driver <- rsDriver(browser=c("firefox"))
   remote_driver <- driver[["client"]]
@@ -185,6 +182,7 @@ extraer_datos <- function(url_google){
   return(lista_items)
   
 }
+
 
 
 
