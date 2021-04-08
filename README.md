@@ -23,7 +23,7 @@ url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22biolog
 ## Generar listado de publicaciones<br>
 	pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
 
-##Guardar resultado en MS Excel (opcional)<br>
+## Guardar resultado en MS Excel (opcional)<br>
 library(xlsx) <br>
 write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Date(),"%Y_%m_%d") , ".xls"),
            sheetName="publica-UTP", append=FALSE) <br>
