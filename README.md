@@ -12,9 +12,9 @@ browseURL("https://www.java.com/en/download/") <br>
 browseURL("https://www.mozilla.org/en-US/firefox/new/")  <br>
 
 ## Instalar version of RSelenium <br>
-devtools::install_github("ropensci/RSelenium") <br>
+	devtools::install_github("ropensci/RSelenium") <br>
 o <br>
-install.packages("RSelenium", dependencies = TRUE) <br>
+	install.packages("RSelenium", dependencies = TRUE) <br>
 
 
 # LISTA DE FUNCIONES  <br>
@@ -39,8 +39,8 @@ url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22biolog
 	pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
 
 ## Guardar resultado en MS Excel (opcional)<br>
-library(xlsx) <br>
-write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Date(),"%Y_%m_%d") , ".xls"),
+	library(xlsx) <br>
+	write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Date(),"%Y_%m_%d") , ".xls"),
            sheetName="publica-UTP", append=FALSE) <br>
 
 <br>
