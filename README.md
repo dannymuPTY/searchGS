@@ -11,7 +11,7 @@ browseURL("https://www.java.com/en/download/") <br>
 ## Instalar version de Firefox browser <br>
 browseURL("https://www.mozilla.org/en-US/firefox/new/")  <br>
 
-## Instalae version of RSelenium <br>
+## Instalar version of RSelenium <br>
 devtools::install_github("ropensci/RSelenium") <br>
 o <br>
 install.packages("RSelenium", dependencies = TRUE) <br>
