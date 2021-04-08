@@ -30,7 +30,7 @@ Error in wdman::selenium(port = port, verbose = verbose, version = version,  :  
   Selenium server signals port = 4567 is already in use.  <br>
   Es necesario volver a cargar la fucnión para que se asigne otro numero de puerto. <br>
   
- 2. Al scrapear es común que el servidor en GS bloque el scaneo enviando el error:<br>
+ 2. Al scrapear es común que el servidor en GS bloquee el scaneo enviando el error:<br>
 
 Selenium message:No active session with ID 702281ae-8fcf-4833-970f-a2b3c273075e <br>
 
@@ -40,4 +40,4 @@ Error: 	 Summary: NoSuchDriver <br>
      
  El navegador mostrará un verificador CAPTCHA para dar acceso a los contenidos.
   
-  
+  3. Existe una limitante del algoritmo para escrapear solo 30 páginas, el máximo es 98.
