@@ -8,8 +8,8 @@ PubGS_library<-function(){
   packages = c("(pipeR","xml2","rvest","plyr", "dplyr","curl", "stringr","tidyverse","purrr", "httr", "RSelenium")
   
   # Instala los paquetes sin� los tienes instalados
-  .inst <- packages %in% installed.packages()
-  if(length(packages[!.inst]) > 0) install.packages(.packages[!.inst])
+  inst <- packages %in% installed.packages()
+  if(length(packages[!inst]) > 0) install.packages(packages[!inst])
   
   # CARGAR PAQUETES O CREAR FUNCIONES
   #-----------------------------------------
