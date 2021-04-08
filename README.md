@@ -23,6 +23,11 @@ lista_pagina <- generar_urls(url_google)<br><br>
 ## Generar listado de publicaciones<br>
 pulicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()<br>
 
+##Guardar resultado en MS Excel (opcional)<br>
+library(xlsx) <br>
+write.xlsx(publicaciones_busqueda, paste("publicaciones_busqueda_",format(Sys.Date(),"%Y_%m_%d") , ".xls"),
+           sheetName="publica-UTP", append=FALSE) <br>
+
 <br>
 ## Nota: <br>
 1. Al CONECTAR frecuente que el navegador no se inicie y envie el error: <br>
