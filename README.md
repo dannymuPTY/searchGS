@@ -2,6 +2,21 @@
 Algoritmo en R para scrapear datos de búsquedas realizada en Google scholar.<br>
 Es necesario tener instalado el navegador Firefox para el uso con el paquete Selenium. <br>
 
+
+# Requisitos setup R + RSelenium ------------------------- <br>
+
+## Instalar version de Java <br>
+browseURL("https://www.java.com/en/download/") <br>
+  
+## Instalar version de Firefox browser <br>
+browseURL("https://www.mozilla.org/en-US/firefox/new/")  <br>
+
+## Instalae version of RSelenium <br>
+devtools::install_github("ropensci/RSelenium") <br>
+o <br>
+install.packages("RSelenium", dependencies = TRUE) <br>
+
+
 # LISTA DE FUNCIONES  <br>
 
 ## Cargar archivo con funciones desde el repositorio <br>
