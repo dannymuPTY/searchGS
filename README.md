@@ -10,9 +10,9 @@ source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar
 ## Añadir enlace de la busqueda en Google Scholar<br>
 url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="<br>
 
-## Instalar paquetes y cargar librerias (opcional, se puede instalar los paquetes individuales)
-# Lista de paquetes c("(pipeR","xml2","rvest","plyr", "wordcloud","tm","NLP","dplyr","curl", "ggplot2","stringr","tidyverse","purrr", "httr", "RSelenium")
-    PubGS_library()
+## Instalar paquetes y cargar librerias (opcional, se puede instalar los paquetes individuales)<br>
+Lista de paquetes c("(pipeR","xml2","rvest","plyr", "wordcloud","tm","NLP","dplyr","curl", "ggplot2","stringr","tidyverse","purrr", "httr", "RSelenium") <br>
+    PubGS_library()<br>
   
 ## Abrir el navegador Firefox desde Selenium <br>
 conectar(url_google)<br>
