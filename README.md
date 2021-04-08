@@ -9,7 +9,7 @@ source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar
 
 ## Añadir enlace de la busqueda en Google Scholar <br>
 (Este enlace es el que se genera al colorCcar un termino en la caja de busqueda de GS)<br>
-url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="<br>
+url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22biologia+celular%22+&btnG="<br>
 
 ## Instalar paquetes y cargar librerias (opcional, se puede instalar los paquetes individuales)<br>
     PubGS_library()<br>
