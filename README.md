@@ -7,7 +7,8 @@ Es necesario tener instalado el navegador Firefox para el uso con el paquete Sel
 ## Cargar archivo con funciones desde el repositorio <br>
 source("https://github.com/dannymuPTY/searchGS/blob/main/busqueda-google-scholar.R")<br>
 
-## Añadir enlace de la busqueda en Google Scholar (Este enlace es el que se genera al color un termino en la caja de busqueda de GS)<br>
+## Añadir enlace de la busqueda en Google Scholar <br>
+(Este enlace es el que se genera al colorCcar un termino en la caja de busqueda de GS)<br>
 url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="<br>
 
 ## Instalar paquetes y cargar librerias (opcional, se puede instalar los paquetes individuales)<br>
