@@ -70,6 +70,9 @@ generar_urls <- function(url_google){
 #-----------------------------------------
 
 conectar <- function(url_google){
+  #cargar librerias
+  PubGS_library()
+  
   #codigo selenium --------------
   driver <- rsDriver(browser=c("firefox"))
   remote_driver <- driver[["client"]]
@@ -184,12 +187,4 @@ extraer_datos <- function(url_google){
 }
 
 
-#-------------------------------------
-#FUNCIONES PARA HACER SCRAPING EN GS
-
-source("funciones-gs.R")
-url_google <- "https://scholar.google.com/scholar?hl=es&as_sdt=0%2C5&q=%22ciencias+biologicas%22+%2B+%22ciencias+ambientales%22&btnG="
-conectar(url_google)
-lista_pagina <- generar_urls(url_google)
-publicaciones_busqueda <- lista_pagina %>% map(extraer_datos) %>% bind_rows()
 
